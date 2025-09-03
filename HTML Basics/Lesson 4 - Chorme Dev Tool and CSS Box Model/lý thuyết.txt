@@ -1,0 +1,46 @@
+Tìm hiểu DevTools và CSS Box Model
+Trong bài học này, chúng ta sẽ tìm hiểu về DevTools trong Google Chrome và mô hình CSS Box Model.
+
+1. DevTools
+DevTools là bộ công cụ gỡ lỗi mạnh mẽ được tích hợp trong trình duyệt Chrome. Nó cho phép các nhà phát triển kiểm tra, chỉnh sửa và gỡ lỗi trang web ngay trên trình duyệt một cách trực quan.
+
+2. CSS Box Model
+- Mọi phần tử HTML trên trang web đều được xem như một chiếc hộp chữ nhật. Mô hình hộp này có bốn phần chính, xếp từ trong ra ngoài:
+
++ Content (Nội dung): Khu vực chứa nội dung thực tế như văn bản hoặc hình ảnh.
+
++ Padding (Khoảng đệm): Khoảng trống nằm giữa nội dung và đường viền của phần tử.
+
++ Border (Đường viền): Đường bao quanh nội dung và padding.
+
++ Margin (Lề): Khoảng trống nằm ngoài đường viền, dùng để tạo khoảng cách giữa các phần tử với nhau.
+
+3. Xử lý nội dung bị tràn
+- Khi bạn thiết lập chiều rộng (width) và chiều cao (height) cố định, nội dung có thể bị tràn ra ngoài nếu nó quá lớn. Bạn nên biết rằng padding chỉ giúp tạo khoảng trống bên trong hộp, chứ không tự động co giãn nội dung để vừa với kích thước đã đặt.
+
+- Để giải quyết vấn đề này, bạn có thể:
+
++ Bỏ chiều cao cố định: Để chiều cao của phần tử tự điều chỉnh theo kích thước của nội dung bên trong.
+
++ Sử dụng overflow: auto: Thuộc tính này sẽ tạo thanh cuộn (scrollbar) để người dùng có thể xem toàn bộ nội dung mà không làm hỏng bố cục.
+
+- Các phương thức của Padding
++ Bạn có thể kiểm soát padding bằng cách sử dụng các phương thức sau:
+
++ Viết rút gọn (shorthand):
+
+    . padding: 20px; (Áp dụng 20px cho cả 4 phía).
+
+    . padding: 10px 20px; (Áp dụng 10px cho trên/dưới, 20px cho trái/phải).
+
+    . padding: 10px 20px 30px 40px; (Áp dụng cho trên, phải, dưới, trái theo thứtự).
+
++ Viết từng thuộc tính riêng lẻ:
+
+    . padding-top
+
+    . padding-right
+
+    . padding-bottom
+
+    . padding-left

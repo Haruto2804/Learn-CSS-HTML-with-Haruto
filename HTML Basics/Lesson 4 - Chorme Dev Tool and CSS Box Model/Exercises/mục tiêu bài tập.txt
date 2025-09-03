@@ -1,0 +1,1 @@
+trong bài tập này chúng ta sẽ bỏ toàn bộ height and width có trong file html và thay thế = padding, dùng padding để làm thành bản thiết kế như ban đầu.
