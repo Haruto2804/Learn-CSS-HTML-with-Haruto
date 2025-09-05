@@ -1,0 +1,29 @@
+.p  {
+    font-family: Verdana;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 240;
+  }
+  .web-title {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .sub-title {
+    color: gray;
+    font-size: 22px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+  .intro-text {
+    font-size: 17px;
+    width:  240px;
+  }
+  .started-button {
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-family: Times New Roman ;
+    padding: 4px 12px;
+  }
