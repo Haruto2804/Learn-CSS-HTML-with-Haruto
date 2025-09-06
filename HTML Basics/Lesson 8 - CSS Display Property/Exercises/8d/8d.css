@@ -1,0 +1,29 @@
+.first-name-box,.last-name-box {
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 15px;
+    border-color: gray;
+    width:100px
+}
+.email-box {
+    border-radius: 5px;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 15px;
+    border-color: gray;
+    width:100px;
+    display: block;
+    margin-top: 10px;
+    width: 236px;
+}
+.sign-up-button {
+  color: white;
+  background-color: rgb(6, 113, 212);
+  border: none;
+  border-radius: 5px;
+  width: 268px;
+  padding: 15px 15px;
+  margin-top: 10px;
+  font-weight: bold;
+}

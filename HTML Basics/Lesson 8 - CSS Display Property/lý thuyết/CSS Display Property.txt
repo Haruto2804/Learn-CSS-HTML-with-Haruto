@@ -1,0 +1,98 @@
+LÝ THUYẾT CHI TIẾT VỀ THUỘC TÍNH CSS DISPLAY
+
+1. Thuộc tính 'display' là gì?
+- Thuộc tính 'display' trong CSS xác định cách một phần tử HTML (element) được hiển thị trên trang web.
+- Nó kiểm soát loại "hộp" (box) mà phần tử tạo ra và cách các phần tử khác tương tác với nó trên layout (bố cục).
+
+---
+
+2. display: block
+- Đặc điểm:
+  - Luôn bắt đầu trên một dòng mới.
+  - Chiếm toàn bộ chiều rộng có sẵn của phần tử cha (container).
+  - Có thể thiết lập tất cả các thuộc tính về kích thước (width, height) và khoảng cách (margin, padding).
+- Các phần tử HTML mặc định có display: block:
+  - Ví dụ: <div>, <p>, <h1>, <header>, <footer>, <ul>, <section>
+- Ví dụ chi tiết:
+  - HTML:
+    <p class="box1">Đây là một đoạn văn bản block.</p>
+    <p class="box2">Đây là một đoạn văn bản khác.</p>
+  - CSS:
+    .box1 {
+      background-color: lightblue;
+      border: 1px solid blue;
+      width: 200px;
+      height: 50px;
+      margin: 10px;
+      padding: 20px;
+    }
+    .box2 {
+      background-color: lightgreen;
+      border: 1px solid green;
+    }
+  - Giải thích:
+    - Phần tử .box1 và .box2 đều nằm trên hai dòng riêng biệt.
+    - .box1 có kích thước và khoảng cách tùy chỉnh, trong khi .box2 tự động chiếm hết chiều rộng còn lại của dòng.
+
+---
+
+3. display: inline
+- Đặc điểm:
+  - Không bắt đầu trên một dòng mới, mà nằm trên cùng một dòng với các phần tử khác.
+  - Chỉ chiếm chiều rộng vừa đủ để chứa nội dung của nó.
+  - Không thể thiết lập các thuộc tính width và height.
+  - Margin và padding chỉ có tác dụng theo chiều ngang (trái, phải), không có tác dụng theo chiều dọc (trên, dưới).
+- Các phần tử HTML mặc định có display: inline:
+  - Ví dụ: <span>, <a>, <img>, <strong>, <em>
+- Ví dụ chi tiết:
+  - HTML:
+    <a href="#" class="link1">Liên kết 1</a>
+    <a href="#" class="link2">Liên kết 2</a>
+  - CSS:
+    .link1 {
+      background-color: pink;
+      border: 1px solid red;
+      /* Các thuộc tính này không có tác dụng */
+      width: 200px;
+      height: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    .link2 {
+      background-color: yellow;
+      border: 1px solid orange;
+    }
+  - Giải thích:
+    - Hai liên kết nằm trên cùng một dòng.
+    - Mặc dù đã cố gắng thiết lập width và height, nhưng chúng không có tác dụng. Padding trên dưới tạo ra không gian nhưng lại chồng lấn lên các phần tử khác.
+
+---
+
+4. display: inline-block
+- Đặc điểm:
+  - Là sự kết hợp của inline và block.
+  - Các phần tử nằm trên cùng một dòng với nhau (giống inline).
+  - Có thể thiết lập đầy đủ các thuộc tính về kích thước (width, height) và khoảng cách (margin, padding) (giống block).
+- Công dụng:
+  - Rất hữu ích khi bạn muốn các phần tử nằm cạnh nhau nhưng vẫn có thể kiểm soát được kích thước và khoảng cách của chúng, ví dụ: các thẻ sản phẩm, menu ngang.
+- Ví dụ chi tiết:
+  - HTML:
+    <div class="card card1">Sản phẩm 1</div>
+    <div class="card card2">Sản phẩm 2</div>
+    <div class="card card3">Sản phẩm 3</div>
+  - CSS:
+    .card {
+      display: inline-block;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      width: 150px;
+      height: 80px;
+      margin: 10px;
+      text-align: center;
+      line-height: 80px;
+    }
+  - Giải thích:
+    - Các thẻ div mặc định là block nhưng khi đặt display: inline-block, chúng sẽ nằm cạnh nhau.
+    - Bạn có thể dễ dàng thiết lập kích thước và khoảng cách cho từng "thẻ sản phẩm" một cách độc lập.
