@@ -1,0 +1,53 @@
+.avatar-square {
+  height:150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+}
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Helvetica;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.friends-number {
+  color:gray;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.add-fr-button {
+  background-color: rgb(11, 123, 220);
+  display: inline-block;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+.user-profile {
+  display: inline-block;
+  margin-left: 100px;
+  box-shadow: 5px 5px 5px rgba(200,200,200,200);
+}
+.line1 {
+  display: block;
+  margin-bottom: 15px;
+}
+.line2 {
+  display: block;
+  margin-bottom: 15px;
+}
+.line3 {
+  display: block;
+}
+.My_Waifu {
+  margin-left: 350px;
+}
+.add-fr-button:hover {
+  opacity: 0.8;
+}
+.add-fr-button:active {
+  opacity: 0.6;
+}

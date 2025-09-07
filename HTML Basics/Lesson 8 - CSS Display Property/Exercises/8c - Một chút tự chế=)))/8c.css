@@ -4,6 +4,7 @@
   height: 92px;
   margin-left: 500px;
   margin-bottom: 26px;
+  margin-top: 200px;
 
 }
 .text-box-search {
@@ -26,13 +27,17 @@
   display: inline-block;
   width:100px;
   vertical-align: top;
+  margin-top: 200px;
 }
 .copyrights {
   font-size: large;
   color: white;
   font-weight: bold;
   display: inline;
-  margin-left: 550px;
+  margin-left: 1200px;
+  display: block;
+  margin-top: 250px;
+
 }
 .katana {
   display: inline-block;
