@@ -1,0 +1,45 @@
+### **Nested Layouts (Kỹ thuật layout lồng nhau) là gì?**
+
+**Nested Layouts** (hay bố cục lồng nhau) là một kỹ thuật thiết kế giao diện người dùng (UI) phổ biến, đặc biệt trong lập trình web và ứng dụng di động. Về cơ bản, nó là việc **đặt một layout (bố cục) bên trong một layout khác**. Kỹ thuật này cho phép bạn xây dựng các giao diện phức tạp và có cấu trúc một cách linh hoạt và dễ quản lý hơn.
+
+Thay vì tạo ra một bố cục phẳng, lớn và phức tạp, bạn có thể chia giao diện thành nhiều phần nhỏ hơn, độc lập. Mỗi phần này có thể có bố cục riêng của nó, được quản lý độc lập với các phần khác.
+
+---
+
+### **Ví dụ và giải thích chi tiết**
+
+Hãy tưởng tượng bạn đang xây dựng một trang web tin tức. Trang này có thể được chia thành các phần sau:
+
+1.  **Layout chính (main layout):** Đây là bố cục bao trọn toàn bộ trang web. Nó có thể bao gồm các thành phần cố định như:
+    * Thanh điều hướng (Header/Navigation Bar) ở trên cùng.
+    * Phần nội dung chính (main content area).
+    * Chân trang (Footer) ở dưới cùng.
+
+2.  **Layout nội dung chính:** Nằm bên trong phần nội dung chính của layout chính. Phần này có thể được chia thành hai cột:
+    * **Cột bên trái:** Chứa các bài viết nổi bật.
+    * **Cột bên phải:** Chứa các quảng cáo hoặc các tin tức liên quan.
+
+3.  **Layout bài viết nổi bật:** Đây là một bố cục nhỏ hơn, nằm trong cột bên trái. Mỗi bài viết nổi bật có thể có bố cục riêng, ví dụ:
+    * Hình ảnh thu nhỏ ở bên trái.
+    * Tiêu đề và tóm tắt bài viết ở bên phải.
+
+4.  **Layout quảng cáo:** Đây là một bố cục khác, nằm trong cột bên phải. Mỗi quảng cáo có thể có bố cục riêng, ví dụ:
+    * Một hình ảnh lớn.
+    * Một dòng mô tả ngắn.
+
+Như bạn thấy, từ một layout lớn, chúng ta đã lồng các layout nhỏ hơn vào bên trong. Mỗi layout nhỏ này giải quyết một vấn đề bố cục riêng biệt, làm cho việc quản lý và phát triển trở nên dễ dàng hơn rất nhiều.
+
+---
+
+### **Lợi ích của kỹ thuật Nested Layouts**
+
+* **Tính mô-đun hóa (Modularity):** Giao diện được chia thành các thành phần nhỏ, độc lập. Bạn có thể tái sử dụng các thành phần này ở nhiều nơi khác nhau mà không cần viết lại mã. Ví dụ, layout của một bài viết nổi bật có thể được sử dụng ở cả trang chủ và trang chuyên mục.
+* **Dễ bảo trì và phát triển:** Khi cần thay đổi một phần nào đó của giao diện, bạn chỉ cần chỉnh sửa layout tương ứng mà không ảnh hưởng đến các phần khác. Điều này giúp giảm thiểu lỗi và tăng tốc độ phát triển.
+* **Cải thiện hiệu suất:** Trong một số framework, kỹ thuật lồng layout cho phép các thành phần bên trong được render (hiển thị) độc lập, giúp tải trang nhanh hơn.
+* **Tối ưu hóa cho các thiết bị khác nhau:** Với kỹ thuật này, việc tạo ra giao diện phản hồi (responsive design) trở nên dễ dàng hơn. Bạn có thể thay đổi cách các layout con được sắp xếp khi kích thước màn hình thay đổi.
+
+---
+
+### **Kết luận**
+
+**Nested Layouts** không chỉ là một kỹ thuật bố cục, mà còn là một phương pháp tư duy trong thiết kế giao diện. Nó khuyến khích việc chia nhỏ vấn đề lớn thành các vấn đề nhỏ hơn, dễ giải quyết hơn. Bằng cách lồng các bố cục vào nhau, bạn có thể tạo ra các giao diện phức tạp, có tổ chức, dễ quản lý và bảo trì.
