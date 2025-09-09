@@ -1,0 +1,13 @@
+
+    .back-ground-blue {
+      background-color: lightblue;
+    }
+      .back-ground-pink {
+      background-color: lightpink;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }

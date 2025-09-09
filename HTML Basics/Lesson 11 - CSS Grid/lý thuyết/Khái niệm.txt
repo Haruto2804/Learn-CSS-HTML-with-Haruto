@@ -1,0 +1,67 @@
+Grid trong CSS
+
+Grid, hay đầy đủ là **CSS Grid Layout**, là một hệ thống bố cục hai chiều (2D) trong CSS. Nó cho phép bạn sắp xếp các thành phần HTML thành các hàng (rows) và cột (columns) một cách linh hoạt và mạnh mẽ. Khác với Flexbox chỉ hoạt động tốt trên một chiều (hàng hoặc cột), Grid được thiết kế để xử lý bố cục phức tạp trên cả hai chiều cùng lúc.
+
+---
+
+### Các kiến thức cơ bản về Grid
+
+Để sử dụng Grid, bạn cần xác định một phần tử làm **Grid Container** và các phần tử con trực tiếp của nó sẽ trở thành **Grid Items**.
+
+**1. Thuộc tính của Grid Container:**
+
+* `display: grid;`: Khai báo một phần tử là container Grid.
+* `grid-template-columns`: Xác định số lượng và chiều rộng của các cột. Bạn có thể dùng các đơn vị như `px`, `%`, `em`, `rem`, hoặc đơn vị mới là `fr` (fractional unit).
+* `grid-template-rows`: Tương tự, xác định số lượng và chiều cao của các hàng.
+* `gap` (hoặc `grid-row-gap`, `grid-column-gap`): Tạo khoảng cách giữa các hàng và cột.
+* `justify-items` / `align-items`: Sắp xếp các item bên trong các ô theo chiều ngang và dọc.
+* `justify-content` / `align-content`: Sắp xếp toàn bộ lưới Grid bên trong container.
+
+**2. Thuộc tính của Grid Items:**
+
+* `grid-column-start` / `grid-column-end`: Xác định item bắt đầu và kết thúc ở cột nào. Có thể viết tắt là `grid-column`.
+* `grid-row-start` / `grid-row-end`: Tương tự, xác định item bắt đầu và kết thúc ở hàng nào. Có thể viết tắt là `grid-row`.
+* `grid-area`: Một thuộc tính viết tắt để xác định cả vị trí hàng và cột của item.
+---
+
+### Đơn vị `fr` và hàm `repeat()`
+
+* **`fr` (Fractional Unit):**
+    * `fr` là đơn vị riêng của Grid, đại diện cho một phần không gian còn lại trong container.
+    * Ví dụ: `grid-template-columns: 1fr 2fr 1fr;` sẽ tạo ra 3 cột, trong đó cột thứ hai có chiều rộng gấp đôi so với cột thứ nhất và thứ ba.
+
+* **`repeat()` Function:**
+    * Hàm `repeat()` giúp bạn tạo ra nhiều hàng hoặc cột có cùng kích thước một cách nhanh chóng.
+    * Cú pháp: `repeat(số_lần, kích_thước)`
+    * Ví dụ: `grid-template-columns: repeat(3, 1fr);` sẽ tạo ra 3 cột có chiều rộng bằng nhau.
+
+---
+
+### Ví dụ chi tiết
+
+Hãy tạo một bố cục đơn giản gồm 3 cột và 2 hàng.
+
+**HTML:**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item-1">Item 1</div>
+        <div class="grid-item-2">Item 2</div>
+        <div class="grid-item-3">Item 3</div>
+        <div class="grid-item-4">Item 4</div>
+        <div class="grid-item-5">Item 5</div>
+        <div class="grid-item-6">Item 6</div>
+    </div>
+
+</body>
+</html>
