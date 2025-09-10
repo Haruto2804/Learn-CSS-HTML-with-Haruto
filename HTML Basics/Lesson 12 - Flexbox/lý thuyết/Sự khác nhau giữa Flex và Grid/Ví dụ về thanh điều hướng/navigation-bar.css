@@ -1,0 +1,13 @@
+.navbar {
+  display: flex;
+  justify-content: space-around; /* Phân bố đều các mục */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}

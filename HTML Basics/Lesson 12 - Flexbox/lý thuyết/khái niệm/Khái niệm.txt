@@ -1,0 +1,158 @@
+## Flexbox (Flexible Box Layout) trong CSS
+
+Flexbox là một mô hình bố cục trong CSS, được thiết kế để sắp xếp các phần tử con (flex items) bên trong một phần tử cha (flex container) theo một chiều duy nhất—hàng hoặc cột.
+
+### Các khái niệm cơ bản
+
+  * **Flex Container:** Phần tử cha, được tạo bằng cách đặt `display: flex;`.
+  * **Flex Items:** Các phần tử con trực tiếp bên trong Flex Container.
+
+-----
+
+### Các thuộc tính của Flex Container
+
+Áp dụng cho phần tử cha để kiểm soát tổng thể bố cục.
+
+**1. `flex-direction`**
+
+  * **row** (mặc định): Sắp xếp các item từ trái sang phải.
+  * **row-reverse**: Sắp xếp các item từ phải sang trái.
+  * **column**: Sắp xếp các item từ trên xuống dưới.
+  * **column-reverse**: Sắp xếp các item từ dưới lên trên.
+
+**Ví dụ:**
+
+```css
+.container {
+  display: flex;
+  flex-direction: column;
+}
+```
+
+**2. `justify-content`**
+
+Căn chỉnh các item dọc theo **trục chính** (hàng ngang nếu `flex-direction: row`).
+
+  * **flex-start** (mặc định): Các item dồn về đầu trục.
+  * **flex-end**: Dồn về cuối trục.
+  * **center**: Căn giữa trục.
+  * **space-between**: Phân bố khoảng trống đều giữa các item.
+  * **space-around**: Phân bố khoảng trống đều xung quanh mỗi item.
+
+**Ví dụ:**
+
+```css
+.container {
+  justify-content: space-around;
+}
+```
+
+**3. `align-items`**
+
+Căn chỉnh các item dọc theo **trục phụ** (hàng dọc nếu `flex-direction: row`).
+
+  * **flex-start**: Các item dồn về đầu trục phụ.
+  * **flex-end**: Dồn về cuối trục phụ.
+  * **center**: Căn giữa trục phụ.
+  * **stretch** (mặc định): Kéo giãn các item để lấp đầy container.
+
+**Ví dụ:**
+
+```css
+.container {
+  align-items: center;
+}
+```
+
+-----
+
+### Các thuộc tính của Flex Item
+
+Áp dụng cho các phần tử con để kiểm soát kích thước và thứ tự riêng lẻ.
+
+**1. `flex-grow`**
+
+Khả năng của item để **phát triển** (mở rộng) lấp đầy không gian trống.
+
+**Ví dụ:**
+
+```css
+.item-1 {
+  flex-grow: 1; /* Lấy 1 phần không gian trống */
+}
+.item-2 {
+  flex-grow: 2; /* Lấy 2 phần không gian trống */
+}
+```
+
+**2. `flex-shrink`**
+
+Khả năng của item để **co lại** khi không đủ không gian. Giá trị mặc định là 1.
+
+**Ví dụ:**
+
+```css
+.item {
+  flex-shrink: 0; /* Ngăn item này co lại */
+}
+```
+
+**3. `flex-basis`**
+
+Kích thước ban đầu của item trước khi không gian được phân bổ.
+
+**Ví dụ:**
+
+```css
+.item {
+  flex-basis: 150px;
+}
+```
+
+**4. `flex` (viết tắt)**
+
+Viết tắt của `flex-grow`, `flex-shrink`, và `flex-basis`.
+
+**Ví dụ:**
+
+```css
+.item {
+  flex: 1 1 auto; /* flex-grow, flex-shrink, flex-basis */
+}
+```
+
+-----
+
+### Ví dụ chi tiết
+
+**HTML:**
+
+```html
+<div class="container">
+  <div class="box">Box 1</div>
+  <div class="box">Box 2</div>
+  <div class="box">Box 3</div>
+</div>
+```
+
+**CSS:**
+
+```css
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  border: 2px solid #ccc;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+```

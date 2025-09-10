@@ -1,0 +1,43 @@
+  .thumbnail1 {
+      width: 100%; 
+    }
+    .thumbnail2 {
+      width: 100%; 
+    }
+    
+    .title {
+      font-weight: 500;
+      margin-top: 0px;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 700;
+
+    }
+    .author,
+    .status {
+      color: gray;
+      font-size: 12px;
+    }
+    .video-info-grid {
+      display: grid;
+      grid-template-columns: 48px 1fr;
+      column-gap: 10px;
+    }
+    .video-info {
+      width: 250px;
+    }
+    .profile-picture {
+      width:100%; 
+      border-radius: 40px;
+    }
+    .thumbnail-row {
+      margin-bottom: 12px;
+    }
+    .author {
+      margin-bottom: 4px;
+    }
+    .grid-video {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 16px;
+    }

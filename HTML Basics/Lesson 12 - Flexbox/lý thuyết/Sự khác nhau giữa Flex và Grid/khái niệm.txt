@@ -1,0 +1,111 @@
+Đây là nội dung so sánh chi tiết giữa Flexbox và Grid, được định dạng để bạn có thể sao chép và lưu vào một tệp tin `.txt`.
+
+-----
+
+## So sánh Flexbox và CSS Grid
+
+Cả Flexbox và CSS Grid đều là các mô hình bố cục mạnh mẽ trong CSS, nhưng chúng được thiết kế để giải quyết các vấn đề khác nhau.
+
+### 1\. Định nghĩa và Mục đích
+
+  * **Flexbox (Flexbox Layout):**
+
+      * **Mục đích:** Sắp xếp các phần tử con theo **một chiều duy nhất** (một hàng hoặc một cột).
+      * **Cách hoạt động:** Điều chỉnh kích thước và căn chỉnh các phần tử dựa trên không gian có sẵn. Cực kỳ hiệu quả cho các thành phần UI nhỏ như thanh điều hướng, form, hoặc các nhóm thẻ (card group).
+
+  * **CSS Grid (Grid Layout):**
+
+      * **Mục đích:** Sắp xếp các phần tử con theo **hai chiều** cùng lúc (hàng và cột).
+      * **Cách hoạt động:** Tạo ra một cấu trúc lưới (grid) với các hàng và cột được xác định trước, cho phép bạn đặt các phần tử vào bất kỳ ô nào trong lưới đó. Lý tưởng để xây dựng bố cục toàn trang (page layout).
+
+-----
+
+### 2\. Các trường hợp sử dụng
+
+  * **Khi nào dùng Flexbox?**
+
+      * **Thanh điều hướng (Navigation Bar):** Để căn chỉnh các mục menu theo chiều ngang.
+      * **Form:** Để sắp xếp các trường input và nút bấm.
+      * **Nhóm các thẻ sản phẩm (Product Cards):** Khi bạn cần các thẻ có chiều cao bằng nhau và được căn chỉnh đều.
+      * **Thành phần UI một chiều:** Bất cứ khi nào bạn cần căn chỉnh các item theo một hàng hoặc một cột.
+
+  * **Khi nào dùng CSS Grid?**
+
+      * **Bố cục toàn trang web (Page Layout):** Để tạo bố cục phức tạp với header, sidebar, nội dung chính và footer.
+      * **Thư viện ảnh (Image Gallery):** Để sắp xếp ảnh theo hàng và cột một cách có cấu trúc.
+      * **Các bảng hoặc biểu đồ:** Khi bạn cần một cấu trúc lưới cứng nhắc.
+
+-----
+
+### 3\. Ví dụ chi tiết
+
+**Ví dụ Flexbox: Thanh điều hướng**
+
+**HTML:**
+
+```html
+<nav class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+```
+
+**CSS:**
+
+```css
+.navbar {
+  display: flex;
+  justify-content: space-around; /* Phân bố đều các mục */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  background-color: #333;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+```
+
+**Ví dụ CSS Grid: Bố cục trang cơ bản**
+
+**HTML:**
+
+```html
+<div class="grid-container">
+  <header class="header">Header</header>
+  <aside class="sidebar">Sidebar</aside>
+  <main class="main-content">Main Content</main>
+  <footer class="footer">Footer</footer>
+</div>
+```
+
+**CSS:**
+
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Cột đầu chiếm 1 phần, cột hai chiếm 3 phần */
+  grid-template-rows: auto 1fr auto; /* Hàng đầu và cuối tự động, hàng giữa co giãn */
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  height: 100vh;
+}
+
+.header { grid-area: header; background: lightcoral; }
+.sidebar { grid-area: sidebar; background: lightblue; }
+.main-content { grid-area: main; background: lightgreen; }
+.footer { grid-area: footer; background: lightgray; }
+```
+
+**Kết luận:**
+
+  * **Flexbox** là công cụ tốt nhất cho **bố cục một chiều**. Nó linh hoạt và dễ sử dụng cho các thành phần nhỏ.
+  * **CSS Grid** là lựa chọn số một cho **bố cục hai chiều**. Nó cung cấp khả năng kiểm soát toàn diện và tạo ra một cấu trúc có tổ chức cho toàn bộ trang web.
+
+Tóm lại, bạn nên xem xét vấn đề bạn đang giải quyết: nếu nó chỉ liên quan đến một hàng hoặc một cột, hãy dùng **Flexbox**. Nếu nó cần một cấu trúc lưới với hàng và cột, hãy dùng **CSS Grid**. Nhiều dự án thực tế sử dụng cả hai kết hợp với nhau.
