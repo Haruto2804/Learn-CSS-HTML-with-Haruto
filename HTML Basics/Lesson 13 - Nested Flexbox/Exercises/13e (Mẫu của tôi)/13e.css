@@ -1,0 +1,57 @@
+div {
+  font-family: Arial;
+}
+body {
+  margin-top: 45px;
+  margin-left: 45px;
+}
+.email-box-container {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  padding: 2px 20px;
+  flex: 1;
+}
+.email-details-container {
+  display: flex;
+  flex-direction: column;
+}
+.email-box {
+  display: flex;
+  flex-direction: row;
+}
+.name-time-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.all-inboxes {
+  color: gray;
+  font-size: 15px;
+  font-family: Arial;
+}
+.email-picture {
+  width:64px;
+  height:64px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-right: 15px;
+} 
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.time {
+  color:gray;
+}
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.preview-text {
+  font-size: 15px;
+  color: gray;
+  margin-top: 5px;
+}
