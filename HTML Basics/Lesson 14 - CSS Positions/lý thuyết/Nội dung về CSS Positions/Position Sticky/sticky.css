@@ -1,0 +1,37 @@
+/* Một vài style cơ bản để dễ nhìn */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* Tạo chiều cao để có thể cuộn */
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* Đây là phần quan trọng */
+.sticky-container {
+    padding-top: 50px; /* Khoảng trống phía trên để header di chuyển vào */
+    background-color: #f9f9f9;
+}
+
+.sticky-header {
+    position: sticky; /* Đặt position là sticky */
+    top: 0; /* Khoảng cách từ mép trên khi dính lại */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 100; /* Đảm bảo nó luôn ở trên cùng */
+}
+
+.content {
+    padding: 20px;
+}

@@ -1,0 +1,11 @@
+.fixed-box {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 50px;
+  background-color: purple;
+  color: white;
+}
+/* Hộp .fixed-box này thường được dùng để tạo các nút "Lên đầu trang" hoặc thanh điều hướng cố định. Nó sẽ luôn nằm cách đáy 20px 
+và bên phải 20px của màn hình, dù bạn có cuộn trang đến đâu. */

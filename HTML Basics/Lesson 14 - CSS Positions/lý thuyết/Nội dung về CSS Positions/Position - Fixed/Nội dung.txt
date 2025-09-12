@@ -1,0 +1,1 @@
+Một phần tử có position: fixed cũng bị loại bỏ khỏi luồng tài liệu thông thường. Vị trí của nó được xác định tuyệt đối so với khung nhìn (viewport) của trình duyệt. Điều này có nghĩa là khi bạn cuộn trang, phần tử này sẽ luôn luôn ở nguyên một vị trí trên màn hình.

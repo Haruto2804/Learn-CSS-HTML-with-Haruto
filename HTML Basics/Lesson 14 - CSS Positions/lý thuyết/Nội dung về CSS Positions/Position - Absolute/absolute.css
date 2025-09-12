@@ -1,0 +1,18 @@
+.parent {
+  position: relative; /* Rất quan trọng! */
+  width: 30 0px;
+  height: 200px;
+  background-color: lightgray;
+}
+
+.absolute-box {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+}
+/* Ở đây, absolute-box sẽ nằm cách mép trên 10px và mép phải 10px của phần tử .parent. */
+/* Nghĩa là khi dùng absolute sẽ xác định vị trí phần tử con trong phần tử cha, phần tử con dùng thuộc tính
+absolute, còn cha thì buộc phải dùng relative*/

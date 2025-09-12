@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Relative Example</title>
+  <style>
+    /* Khi một phần tử có position: relative, nó vẫn nằm trong luồng tài liệu thông thường.
+    Tuy nhiên, bạn có thể điều chỉnh vị trí của nó tương đối với vị trí ban đầu của chính nó 
+    bằng cách sử dụng các thuộc tính top, bottom, left, hay right. Các phần tử khác sẽ không bị ảnh hưởng bởi sự dịch chuyển này, 
+    và không gian ban đầu của phần tử relative vẫn được giữ lại. */
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background-color: lightgreen;
+    width:100px;
+    height:100px;
+}
+    /* Ở ví dụ này, relative-box sẽ dịch xuống 20px và sang phải 30px 
+    so với vị trí lẽ ra nó phải nằm. */
+  </style>
+</head>
+<body>
+  <div class = "relative-box"></div>
+</body>
+</html>

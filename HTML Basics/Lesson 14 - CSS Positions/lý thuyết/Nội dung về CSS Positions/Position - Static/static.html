@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Static Example</title>
+</head>
+<style>
+  /* Đây là giá trị mặc định của mọi phần tử HTML. Khi một phần tử có position: static, 
+  nó tuân theo luồng tài liệu thông thường (normal flow). 
+  Bạn không thể sử dụng các thuộc tính top, bottom, left, hay right 
+  để thay đổi vị trí của nó. */
+  .static-box {
+    position: static;
+    background-color: lightblue;
+    width:100px;
+    height: 100px;
+  }
+  /* Trong trường hợp này,
+  static-box sẽ hiển thị ở vị trí tự nhiên của nó trên trang web. */
+</style>
+<body>
+  <div class = "static-box"></div>
+</body>
+</html>

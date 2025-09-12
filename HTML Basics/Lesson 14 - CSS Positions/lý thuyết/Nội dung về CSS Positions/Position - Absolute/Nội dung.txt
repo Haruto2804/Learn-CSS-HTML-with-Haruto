@@ -1,0 +1,6 @@
+Đây là một trong những loại position quan trọng nhất. Một phần tử có position: absolute sẽ bị loại bỏ khỏi luồng tài liệu thông thường. Vị trí của nó được xác định tuyệt đối so với phần tử cha có position khác static gần nhất. Nếu không có phần tử cha nào như vậy, nó sẽ định vị tuyệt đối so với <body> của trang.
+
+Lưu ý quan trọng: Để absolute hoạt động đúng ý, hãy đảm bảo rằng phần tử cha của nó phải có position: relative.
+Đây là một trong những loại position quan trọng nhất. Một phần tử có position: absolute sẽ bị loại bỏ khỏi luồng tài liệu thông thường. Vị trí của nó được xác định tuyệt đối so với phần tử cha có position khác static gần nhất. Nếu không có phần tử cha nào như vậy, nó sẽ định vị tuyệt đối so với <body> của trang.
+
+Lưu ý quan trọng: Để absolute hoạt động đúng ý, hãy đảm bảo rằng phần tử cha của nó phải có position: relative.
