@@ -1,0 +1,2 @@
+position: sticky là sự kết hợp giữa relative và fixed. Ban đầu, phần tử hoạt động như position: relative. Nhưng khi bạn cuộn trang đến một điểm nhất định (được xác định bởi top, bottom, left, hoặc right), 
+nó sẽ chuyển sang trạng thái position: fixed và dính lại ở vị trí đó.

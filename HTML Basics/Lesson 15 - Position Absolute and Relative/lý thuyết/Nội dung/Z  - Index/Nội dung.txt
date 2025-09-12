@@ -1,0 +1,7 @@
+Z-index trong CSS là một thuộc tính dùng để xác định thứ tự xếp chồng (stacking order) của các phần tử trên trang web. Nó hoạt động như một hệ thống "chiều sâu" giúp bạn quyết định phần tử nào sẽ nằm trên và phần tử nào nằm dưới khi chúng có vị trí chồng lấn lên nhau.
+
+* **Giá trị Z-index:** Z-index chấp nhận một giá trị số nguyên.
+    * **Giá trị dương (ví dụ: `1`, `10`, `100`):** Đẩy phần tử lên trên. Số càng lớn, phần tử càng nằm ở trên cùng.
+    * **Giá trị âm (ví dụ: `-1`, `-10`):** Đẩy phần tử xuống dưới.
+    * **Giá trị `0`:** Mặc định.
+* **Điều kiện hoạt động:** Thuộc tính `z-index` chỉ có tác dụng với các phần tử có thuộc tính `position` được đặt là **`relative`**, **`absolute`**, **`fixed`** hoặc **`sticky`**. Nếu một phần tử có `position: static` (giá trị mặc định), `z-index` sẽ không có tác dụng.

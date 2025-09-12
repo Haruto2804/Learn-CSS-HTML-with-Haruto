@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Z - Index Example</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      position: absolute; /* Điều kiện để z-index hoạt động */
+    }
+
+    .red-box {
+      background-color: red;
+      left: 10px;
+      top: 10px;
+      z-index: 1; /* Hộp đỏ sẽ nằm trên */
+    }
+
+    .blue-box {
+      background-color: blue;
+      left: 30px;
+      top: 30px;
+      z-index: 0; /* Hộp xanh sẽ nằm dưới */
+    }
+  </style>
+</head>
+<body>
+    <div class="box red-box"></div>
+    <div class="box blue-box"></div>
+</body>
+</html>
+<!-- Trong ví dụ trên, mặc dù hộp xanh được khai báo sau trong HTML (nên thường sẽ nằm trên), nhưng do `z-index` của hộp đỏ (`1`) lớn hơn hộp xanh (`0`), hộp đỏ sẽ được hiển thị ở phía trên. 
+Nếu bạn đổi `z-index` của hộp xanh thành 2, hộp xanh sẽ nằm trên cùng. -->

@@ -1,0 +1,15 @@
+body {
+  height: 3000px;
+  position: relative;
+}
+
+.x-button {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  border-radius: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 5px 8px;
+}
